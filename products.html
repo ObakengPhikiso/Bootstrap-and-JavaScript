@@ -1,190 +1,180 @@
-<!doctype html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- font awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <!-- Custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <title>Products</title>
 </head>
-
 <body>
-    <!-- Naviagation -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link " href="products.html">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About us</a>
-                </li>
-            </ul>
+    <div class="container-fluid">
+        <div class="nav-container">
+        <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+        <img class="image" height="500" src="Imgs/logo.PNG" >
         </div>
-    </nav>
-    <!-- End of Naviagation -->
-    <div class="content container-fluid">
-        <section class="body-content">
-            <div class="row pt-3">
-                <div class="col-md-4">
-                    <figure class="card card-product">
-                        <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
-                        <figcaption class="info-wrap">
-                            <h4 class="title">Another name of item</h4>
-                            <p class="desc">Some small description goes here</p>
-                            <div class="rating-wrap">
-                                <div class="label-rating">132 reviews</div>
-                                <div class="label-rating">154 orders </div>
-                            </div> <!-- rating-wrap.// -->
-                        </figcaption>
-                        <div class="bottom-wrap">
-                            <a href="" class="btn btn-sm m-3 btn-primary float-right">Order Now</a>
-                            <div class="price-wrap h5">
-                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-                            </div> <!-- price-wrap.// -->
-                        </div> <!-- bottom-wrap.// -->
-                    </figure>
-                </div> <!-- col // -->
-                <div class="col-md-4">
-                    <figure class="card card-product">
-                        <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"> </div>
-                        <figcaption class="info-wrap">
-                            <h4 class="title">Good product</h4>
-                            <p class="desc">Some small description goes here</p>
-                            <div class="rating-wrap">
-                                <div class="label-rating">132 reviews</div>
-                                <div class="label-rating">154 orders </div>
-                            </div> <!-- rating-wrap.// -->
-                        </figcaption>
-                        <div class="bottom-wrap">
-                            <a href="" class="btn btn-sm m-3 btn-primary float-right">Order Now</a>
-                            <div class="price-wrap h5">
-                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-                            </div> <!-- price-wrap.// -->
-                        </div> <!-- bottom-wrap.// -->
-                    </figure>
-                </div> <!-- col // -->
-                <div class="col-md-4">
-                    <figure class="card card-product">
-                        <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
-                        <figcaption class="info-wrap">
-                            <h4 class="title">Product name goes here</h4>
-                            <p class="desc">Some small description goes here</p>
-                            <div class="rating-wrap">
-                                <div class="label-rating">132 reviews</div>
-                                <div class="label-rating">154 orders </div>
-                            </div> <!-- rating-wrap.// -->
-                        </figcaption>
-                        <div class="bottom-wrap">
-                            <a href="" class="btn btn-sm m-3 btn-primary float-right">Order Now</a>
-                            <div class="price-wrap h5">
-                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-                            </div> <!-- price-wrap.// -->
-                        </div> <!-- bottom-wrap.// -->
-                    </figure>
-                </div> <!-- col // -->
-                <div class="col-md-4">
-                    <figure class="card card-product">
-                        <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
-                        <figcaption class="info-wrap">
-                            <h4 class="title">Product name goes here</h4>
-                            <p class="desc">Some small description goes here</p>
-                            <div class="rating-wrap">
-                                <div class="label-rating">132 reviews</div>
-                                <div class="label-rating">154 orders </div>
-                            </div> <!-- rating-wrap.// -->
-                        </figcaption>
-                        <div class="bottom-wrap">
-                            <a href="" class="btn btn-sm m-3 btn-primary float-right">Order Now</a>
-                            <div class="price-wrap h5">
-                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-                            </div> <!-- price-wrap.// -->
-                        </div> <!-- bottom-wrap.// -->
-                    </figure>
-                </div> <!-- col // -->
-                <div class="col-md-4">
-                    <figure class="card card-product">
-                        <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
-                        <figcaption class="info-wrap">
-                            <h4 class="title">Product name goes here</h4>
-                            <p class="desc">Some small description goes here</p>
-                            <div class="rating-wrap">
-                                <div class="label-rating">132 reviews</div>
-                                <div class="label-rating">154 orders </div>
-                            </div> <!-- rating-wrap.// -->
-                        </figcaption>
-                        <div class="bottom-wrap">
-                            <a href="" class="btn btn-sm m-3 btn-primary float-right">Order Now</a>
-                            <div class="price-wrap h5">
-                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-                            </div> <!-- price-wrap.// -->
-                        </div> <!-- bottom-wrap.// -->
-                    </figure>
-                </div> <!-- col // -->
-                <div class="col-md-4">
-                    <figure class="card card-product">
-                        <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
-                        <figcaption class="info-wrap">
-                            <h4 class="title">Product name goes here</h4>
-                            <p class="desc">Some small description goes here</p>
-                            <div class="rating-wrap">
-                                <div class="label-rating">132 reviews</div>
-                                <div class="label-rating">154 orders </div>
-                            </div> <!-- rating-wrap.// -->
-                        </figcaption>
-                        <div class="bottom-wrap">
-                            <a href="" class="btn btn-sm m-3 btn-primary float-right">Order Now</a>
-                            <div class="price-wrap h5">
-                                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-                            </div> <!-- price-wrap.// -->
-                        </div> <!-- bottom-wrap.// -->
-                    </figure>
-                </div> <!-- col // -->
-            </div> <!-- row.// -->
 
-        </section>
+        <div class="menu-container" id="navbar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <div class="menu-content">
+        <a href="index.html">HOME</a>
+        <a href="products.html">Products</a>
+        <a href="login.html">Login/Register</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+
     </div>
-    <footer class="footer bg-light  justify-content-center sticky-bottom">
-        <div class="container">
-            <div class="pull-right">
 
-            </div>
-
-            <a href="#"><i class="mr-5 fa fa-facebook-official fa-2x"></i></a>
-            <a href="#"><i class="mr-5 fa fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="mr-5 fa fa-linkedin fa-2x"></i></a>
-            <a href="#"><i class="mr-5 fa fa-whatsapp fa-2x"></i></a>
-            <p class="h3">
-                <i class="fa fa-copyright" aria-hidden="true"> Copy rights reserved</i>
-            </p>
         </div>
-    </footer>
+            
+        <h1>Exclusive virgin hair wigs</h1>
+            <div class="row pt-3">
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title">Another name of item</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a  class="btn addToCart btn-sm m-3 btn-primary float-right">Add to cart</a>
+                                <div class="price-wrap h5">
+                                    <span class="price-new">R1280</span> <del class="price-old">R1980</del>
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"> </div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title">Good product</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a  class="btn addToCart btn-sm m-3 btn-primary float-right">Add to cart</a>
+                                <div class="price-wrap h5">
+                                    <span class="price-new">R1280</span> <del class="price-old">R1980</del>
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title">Product name goes here</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a  class="btn addToCart btn-sm m-3 btn-primary float-right">Add to cart</a>
+                                <div class="price-wrap h5">
+                                    <span class="price-new">R1280</span> <del class="price-old">R1980</del>
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title">Product name goes here</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a  class="btn addToCart btn-sm m-3 btn-primary float-right">Add to cart</a>
+                                <div class="price-wrap h5">
+                                    <span class="price-new">R1280</span> <del class="price-old">R1980</del>
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title">Product name goes here</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a  class="btn addToCart btn-sm m-3 btn-primary float-right">Add to cart</a>
+                                <div class="price-wrap h5">
+                                    <span class="price-new">R1280</span> <del class="price-old">R1980</del>
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9IfXFeHmEbVfAwdL8Mnz81MQY3d7tWywLMDP2X3wTapnnZpEg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title">Product name goes here</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a  class="btn addToCart btn-sm m-3 btn-primary float-right">Add to cart</a>
+                                <div class="price-wrap h5">
+                                    <span class="price-new">R1280</span> <del class="price-old">R1980</del>
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+                </div> <!-- row.// -->
+                <footer class="footer bg-dark  justify-content-center sticky-bottom">
+                        <div class="container">
+                            <div class="pull-right">
+                
+                            </div>
+                
+                            <a href="#"><i class="mr-5 fa fa-facebook-official fa-2x"></i></a>
+                            <a href="#"><i class="mr-5 fa fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="mr-5 fa fa-linkedin fa-2x"></i></a>
+                            <a href="#"><i class="mr-5 fa fa-whatsapp fa-2x"></i></a>
+                            <p class="h3">
+                                <i class="fa fa-copyright" aria-hidden="true"> Copy rights reserved</i>
+                            </p>
+                        </div>
+                    </footer>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="/js/cart-script.js"></script>
 </body>
-
 </html>

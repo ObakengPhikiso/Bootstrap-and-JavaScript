@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <title>Login / Register</title>
+</head>
+<body>
+    <div class="container-fluid">
+            <div class="nav-container">
+                    <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+                    <img class="image" height="500" src="Imgs/logo.PNG" >
+                    </div>
+            
+                    <div class="menu-container" id="navbar">
+                    <span class="closebtn" onclick="closeMenu()">&times;</span>
+                    <div class="menu-content">
+                    <a href="index.html">HOME</a>
+                    <a href="products.html">Products</a>
+                    <a href="login.html">Login/Register</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="about.html">About</a>
+                    </div>
+            
+                    </div>
+                        
+                    <h1>Login or Register</h1>
+                    <div class="container">
+                        <div class="col-md-6">
+                                <div class="card">
+                                        <article class="card-body">
+                                            <a onclick="showRegister()" class="float-right btn btn-outline-primary">Register</a>
+                                            <h4 class="card-title mb-4 mt-1">Login</h4>
+                                            <p>
+                                                <a href="" class="btn btn-block btn-outline-info"> <i class="fa fa-twitter"></i>   Login via Twitter</a>
+                                                <a href="" class="btn btn-block btn-outline-primary"> <i class="fa fa-facebook"></i>   Login via facebook</a>
+                                            </p>
+                                            <hr>
+                                            <form>
+                                            <div class="form-group">
+                                                <input name="" class="form-control" placeholder="Email or login" type="email">
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="******" type="password">
+                                            </div> <!-- form-group// -->                                      
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                                                    </div> <!-- form-group// -->
+                                                </div>
+                                                <div class="col-md-6 text-right">
+                                                    <a class="small" href="#">Forgot password?</a>
+                                                </div>                                            
+                                            </div> <!-- .row// -->                                                                  
+                                        </form>
+                                        </article>
+                                        </div> <!-- card.// -->
+                                            </aside> <!-- col.// -->
+                                            <aside class="col-sm-4">
+                        </div>
+                    </div>
+                    <footer class="footer bg-dark  justify-content-center sticky-bottom">
+                            <div class="container">
+                                <div class="pull-right">
+                    
+                                </div>
+                    
+                                <a href="#"><i class="mr-5 fa fa-facebook-official fa-2x"></i></a>
+                                <a href="#"><i class="mr-5 fa fa-twitter fa-2x"></i></a>
+                                <a href="#"><i class="mr-5 fa fa-linkedin fa-2x"></i></a>
+                                <a href="#"><i class="mr-5 fa fa-whatsapp fa-2x"></i></a>
+                                <p class="h3">
+                                    <i class="fa fa-copyright" aria-hidden="true"> Copy rights reserved</i>
+                                </p>
+                            </div>
+                        </footer>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="/js/cart-script.js"></script>
+</body>
+</html>
