@@ -2,120 +2,222 @@
 
 <head>
     <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- font awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+
 </head>
 
 <body>
-    
-<div class="nav-container">
-<span class="menu-icon" onclick="openMenu()">&#9776;</span>
-<img class="image" height="500" src="Imgs/logo.PNG" >
-</div>
 
-<div class="menu-container" id="navbar">
-<span class="closebtn" onclick="closeMenu()">&times;</span>
-<div class="menu-content">
-<a href="index.html">HOME</a>
-<a href="products.html">Products</a>
-<a href="login.html">Login/Register</a>
-<a href="cart.html">Cart</a>
-<a href="about.html">About</a>
+    <div class="nav-container">
+        <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+        <img class="image img-fluid img-thumbnail" src="Imgs/logo.PNG">
+    </div>
 
-</div>
+    <div class="menu-container" id="navbar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <div class="menu-content">
+            <a href="index.html">HOME</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login/Register</a>
 
-</div>
-    
+        </div>
+
+    </div>
+    <div id="cart" class="cart">
+            <!-- cart item -->
+
+            <!--end of  cart item -->
+            <!-- cart total -->
+            <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+                <h5>total</h5>
+                <h5> R <strong id="cart-total" class="font-weight-bold">00.00</strong> </h5>
+            </div>
+            <!--end cart total -->
+            <!-- cart buttons -->
+            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+                <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+            </div>
+            <!--end of  cart buttons -->
+            <!--  -->
+        </div>
+
+        <div class="nav-info-items d-none justify-content-end mt-3 d-flex  ">
+            <!-- single info -->
+            <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                <span class="cart-info__icon mr-lg-3"><i class="fa fa-shopping-cart fa-3x"></i></span>
+                <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - R<span
+                        class="item-total">00.00</span></p>
+            </div>
+            <!-- end of single info -->
+        </div>
+
     <h1>Premium hair care products</h1>
+    <div class="row pt-3">
+            <div class="col-md-4 mx-auto my-3 store-item sweets" data-item="kinky">
+                <div class="card product-card">
+                    <div class="img-container">
+                        <img height="200" width="200" src="/Imgs/s-l640.jpg" class="store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa fa-shopping-cart fa-4x"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Product name</h5>
+                            <h5 class="store-item-value">R <strong id="store-item-price"
+                                    class="font-weight-bold">80</strong></h5>
     
-    <!-- products -->
-    <section class = "product container-fluid">
-        <div class = "product-card">
-            
-            <div class= "product-image">
-                
-                <img src="Imgs/download%20(1).jpg">
-                
-            </div> 
-            <div class="product-info">
-                <h5>Tresemme shampoo</h5>
-                <h6>R90.00</h6>
-                <button type="button"> Add to cart </button>
-            </div>
-        </div>
-        
-    <div class = "product-card">
-            
-            <div class= "product-image">
-                
-                <img src="Imgs/81ju+CqIBvL._SY355_.jpg" width="300px" height="300px">
-                
-            </div> 
-            <div class="product-info">
-                <h5>Tresemme Shampo</h5>
-                <h6>R85.00</h6>
-                <button type="button"> Add to cart </button>
-            </div>
-        </div>
-        
-    <div class = "product-card">
-            
-            <div class= "product-image">
-                
-                <img src="Imgs/ColourArt-Range-400x250.png">
-                
-        </div> 
-            <div class="product-info">
-                <h5>color art hair care kit</h5>
-                <h6>R320.00</h6>
-                <button type="button"> Add to cart </button>
-            </div>
-        </div>
-        
-                <div class = "product-card">
-            
-            <div class= "product-image">
-                
-                <img src="Imgs/91CannUwrVL._SY355_.jpg">
-                
-            </div> 
-            <div class="product-info">
-                <h5>Hair food</h5>
-                <h6>R20.00</h6>
-                <button type="button"> Add to cart </button>
-            </div>
-        </div>
-    </section>
-    <footer class="footer bg-dark  justify-content-center sticky-bottom">
-            <div class="container">
-                <div class="pull-right">
+                        </div>
+                    </div>
+    
     
                 </div>
-    
-                <a href="#"><i class="mr-5 fa fa-facebook-official fa-2x"></i></a>
-                <a href="#"><i class="mr-5 fa fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="mr-5 fa fa-linkedin fa-2x"></i></a>
-                <a href="#"><i class="mr-5 fa fa-whatsapp fa-2x"></i></a>
-                <p class="h3">
-                    <i class="fa fa-copyright" aria-hidden="true"> Copy rights reserved</i>
-                </p>
+                <!-- end of card-->
             </div>
-        </footer>
+            <div class="col-md-4 mx-auto my-3 store-item sweets" data-item="kinky">
+                <div class="card product-card">
+                    <div class="img-container">
+                        <img height="200" width="200" src="/Imgs/tresemme-keratin-smooth-shampoo-conditioner-hair-conditioner-hair-care-hair-spray-shampoo-thumbnail.jpg" class="store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa fa-shopping-cart fa-4x"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Product name</h5>
+                            <h5 class="store-item-value">R <strong id="store-item-price"
+                                    class="font-weight-bold">80</strong></h5>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <!-- end of card-->
+            </div>
+            <div class="col-md-4 mx-auto my-3 store-item sweets" data-item="kinky">
+                <div class="card product-card">
+                    <div class="img-container">
+                        <img height="200" width="200" src="/Imgs/tube-1884373_960_720.jpg" class="store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa fa-shopping-cart fa-4x"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Product name</h5>
+                            <h5 class="store-item-value">R <strong id="store-item-price"
+                                    class="font-weight-bold">80</strong></h5>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <!-- end of card-->
+            </div>
+            <div class="col-md-4 mx-auto my-3 store-item sweets" data-item="kinky">
+                <div class="card product-card">
+                    <div class="img-container">
+                        <img height="200" width="200" src="/Imgs/s-l640.jpg" class="store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa fa-shopping-cart fa-4x"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Product name</h5>
+                            <h5 class="store-item-value">R <strong id="store-item-price"
+                                    class="font-weight-bold">80</strong></h5>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <!-- end of card-->
+            </div>
+            <div class="col-md-4 mx-auto my-3 store-item sweets" data-item="kinky">
+                <div class="card product-card">
+                    <div class="img-container">
+                        <img height="200" width="200" src="/Imgs/tresemme-keratin-smooth-shampoo-conditioner-hair-conditioner-hair-care-hair-spray-shampoo-thumbnail.jpg" class="store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa fa-shopping-cart fa-4x"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Product name</h5>
+                            <h5 class="store-item-value">R <strong id="store-item-price"
+                                    class="font-weight-bold">80</strong></h5>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <!-- end of card-->
+            </div>
+            <div class="col-md-4 mx-auto my-3 store-item sweets" data-item="kinky">
+                <div class="card product-card">
+                    <div class="img-container">
+                        <img height="200" width="200" src="/Imgs/tube-1884373_960_720.jpg" class="store-img" alt="">
+                        <span class="store-item-icon">
+                            <i class="fa fa-shopping-cart fa-4x"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="store-item-name">Product name</h5>
+                            <h5 class="store-item-value">R <strong id="store-item-price"
+                                    class="font-weight-bold">80</strong></h5>
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <!-- end of card-->
+            </div>
+
+    </div>
+
+  
+    <footer class="footer bg-dark  justify-content-center sticky-bottom">
+        <div class="container">
+            <div class="pull-right">
+
+            </div>
+
+            <a href="#"><i class="mr-5 fa fa-facebook-official fa-2x"></i></a>
+            <a href="#"><i class="mr-5 fa fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="mr-5 fa fa-linkedin fa-2x"></i></a>
+            <a href="#"><i class="mr-5 fa fa-whatsapp fa-2x"></i></a>
+            <p class="h5">
+                <i class="fa fa-copyright text-white" aria-hidden="true"> Copy rights reserved</i>
+            </p>
+        </div>
+    </footer>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="/js/cart-script.js"></script>
-</body> 
+</body>
 
 </html>
