@@ -17,7 +17,7 @@ function submit() {
 
     var correct = 0;
     var total = 15;
-    var answers = [3,2,1,1,2,1,2,3,1,3,2,3,3,3,2];
+    var answers = [3,2,1,3,1,2,1,2,3,2,3,2,3,3,2];
 
     for(var i = 1; i <= total; i++) {
         if(eval('q'+i) == answers[i - 1]) {
