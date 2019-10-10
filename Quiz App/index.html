@@ -28,36 +28,53 @@
                 <div class="col bg-light ml-2 pb-4">
                     <p class="lead text-center">Questions</p>
                     <form id="quiz" name="quiz">
-                        <div class="form-group pb-3">
-                            <label class="col-form-label" for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control form-control-sm col-5" name="question1">
-                                <option name="question1" value="1">1</option>
-                                <option name="question1" value="2">2</option>
-                                <option name="question1" value="3">3</option>
-                            </select>
-                        </div>
+
                         <fieldset class="form-group pb-3">
-                            <legend class="col-form-label ">Radios</legend>
+                            <legend class="col-form-label ">(1) What does HTML stand for?</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="gridRadios1"
+                                        value="3">
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Hyper text Markup language
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question1" id="gridRadios2"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Home Tool Markup language
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="question1" id="gridRadios3"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios3">
+                                        Hyperlinks and text markup language
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(2) Which character is used to indicate an end tag?</legend>
                             <div class="col-sm-10">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="question2" id="gridRadios1"
                                         value="1" checked>
                                     <label class="form-check-label" for="gridRadios1">
-                                        First radio
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="question2" id="gridRadios2"
-                                        value="2">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Second radio
-                                    </label>
+                                        < </label> </div> <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="question2"
+                                                id="gridRadios2" value="2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                /
+                                            </label>
                                 </div>
                                 <div class="form-check disabled">
                                     <input class="form-check-input" type="radio" name="question2" id="gridRadios3"
                                         value="3">
                                     <label class="form-check-label" for="gridRadios3">
-                                        Third disabled radio
+                                        *
                                     </label>
                                 </div>
                             </div>
@@ -68,27 +85,29 @@
                                 <img src="images/webdev.jpg" height="200" width="200" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <fieldset class="form-group">
-                                        <legend class="col-form-label ">Radios</legend>
+                                        <legend class="col-form-label ">(3) Which one of the above is a scripting
+                                            language
+                                        </legend>
                                         <div class="col-sm-10">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="question3"
                                                     id="gridRadios1" value="1" checked>
                                                 <label class="form-check-label" for="gridRadios1">
-                                                    First radio
+                                                    JavaScript
                                                 </label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="question3"
                                                     id="gridRadios2" value="2">
                                                 <label class="form-check-label" for="gridRadios2">
-                                                    Second radio
+                                                    CSS
                                                 </label>
                                             </div>
                                             <div class="form-check disabled">
                                                 <input class="form-check-input" type="radio" name="question3"
                                                     id="gridRadios3" value="3">
                                                 <label class="form-check-label" for="gridRadios3">
-                                                    Third disabled radio
+                                                    HTML5
                                                 </label>
                                             </div>
                                         </div>
@@ -96,12 +115,355 @@
                                 </div>
                             </div>
                         </div>
+
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(4) Which one is the correct HTML element for the largest
+                                heading?</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="gridRadios1"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        < head>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question4" id="gridRadios2"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        < h6>
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="question4" id="gridRadios3"
+                                        value="3">
+                                    <label class="form-check-label" for="gridRadios3">
+                                        < h1>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group pb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/css.jpg" height="200" width="200" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <fieldset class="form-group">
+                                        <legend class="col-form-label ">(5)What does CSS stand for?</legend>
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="question5"
+                                                    id="gridRadios1" value="1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    cascading style sheet
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="question5"
+                                                    id="gridRadios2" value="2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    creative style sheet
+                                                </label>
+                                            </div>
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="question5"
+                                                    id="gridRadios3" value="3">
+                                                <label class="form-check-label" for="gridRadios3">
+                                                    computer style sheet
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(6)Which one is the correct HTML element to define
+                                emphasized
+                                text?</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="gridRadios1"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        < i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question6" id="gridRadios2"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        < em>
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="question6" id="gridRadios3"
+                                        value="3">
+                                    <label class="form-check-label" for="gridRadios3">
+                                        < italic>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(7)The external JavaScript file must contain script tag.
+                            </legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="gridRadios1"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        False
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question7" id="gridRadios2"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        True
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(8)How do you create a function in JavaScript?
+                            </legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="gridRadios1"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        function = myFunction()
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="gridRadios2"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        function myFunction()
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question8" id="gridRadios3"
+                                        value="3">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        function:myFunction()
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(9)Which CSS property controls the text size?
+                            </legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="gridRadios1"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        text-style
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="gridRadios2"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        text-size
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question9" id="gridRadios3"
+                                        value="3">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        font-size
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(10)Is JavaScript case-sensitive?
+                            </legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="gridRadios1"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question10" id="gridRadios2"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="form-group pb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/javascript.png" height="200" width="200" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <fieldset class="form-group">
+                                        <legend class="col-form-label ">(11)Which operator is used to assign a value to
+                                            a
+                                            variable</legend>
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="question11"
+                                                    id="gridRadios1" value="1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                    +
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="question11"
+                                                    id="gridRadios2" value="2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    \
+                                                </label>
+                                            </div>
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="question11"
+                                                    id="gridRadios3" value="3">
+                                                <label class="form-check-label" for="gridRadios3">
+                                                    =
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+
+                        <fieldset class="form-group pb-3">
+                            <legend class="col-form-label ">(12)JavaScript is the same as JAVA?
+                            </legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question12" id="gridRadios1"
+                                        value="1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        True
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question12" id="gridRadios2"
+                                        value="2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        False
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group pb-3">
+                            <div class="card" style="width: 20rem;">
+                                <iframe width="400" height="400" class="card-img-top" src="https://www.youtube.com/embed/4K4QhIAfGKY"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                                <div class="card-body">
+                                    <fieldset class="form-group">
+                                        <legend class="col-form-label ">(13)What does the video focus on?</legend>
+                                        <div class="col-sm-10">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="question11"
+                                                    id="gridRadios1" value="1" checked>
+                                                <label class="form-check-label" for="gridRadios1">
+                                                   JavaScript
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="question11"
+                                                    id="gridRadios2" value="2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                  PHP
+                                                </label>
+                                            </div>
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="question11"
+                                                    id="gridRadios3" value="3">
+                                                <label class="form-check-label" for="gridRadios3">
+                                                   HTML
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+
+                        <fieldset class="form-group pb-3">
+                                <legend class="col-form-label ">(14)How do you write "Hello World" in PHP?
+                                </legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="question12" id="gridRadios1"
+                                            value="1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            "Hello World";
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="question12" id="gridRadios2"
+                                            value="2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Document.write("Hello World");
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="question12" id="gridRadios2"
+                                            value="3">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            echo "Hello World";
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        <fieldset class="form-group pb-3">
+                                <legend class="col-form-label ">(15)What symbol does all variables start with in PHP?
+                                </legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="question12" id="gridRadios1"
+                                            value="1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            &
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="question12" id="gridRadios2"
+                                            value="2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            $
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="question12" id="gridRadios2"
+                                            value="3">
+                                        <label class="form-check-label" for="gridRadios2">
+                                          #
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
                     </form>
-                    <button type="button" id="button" class="btn btn-primary btn-lg btn-block" onclick="submit();">Submit</button>
+                    <button type="button" id="button" class="btn btn-primary btn-lg btn-block"
+                        onclick="submit();">Submit</button>
                 </div>
-                <div class="col bg-info ml-2 mr-2 ">
-                    <div id="after_submit">
-                    <p class="lead text-center">Results</p>
+            </div>
+            <div class="row">
+                <div id="after_submit" class="col bg-info ml-2 mr-2 ">
+                    <div>
+                        <p class="lead text-center">Results</p>
                         <p id="number_correct"></p>
                         <p id="message"></p>
                         <img width="300" height="300" id="picture">
@@ -113,18 +475,19 @@
 
     </div>
 
+
     <!-- Optional JavaScript -->
     <script src="scripts/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
