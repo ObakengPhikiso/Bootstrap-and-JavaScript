@@ -21,9 +21,10 @@
 				let price = event.target.parentElement.parentElement.nextElementSibling.children[0].children[1].textContent;
 				let finalPrice = price.slice(1).trim();
 				item.price = finalPrice;
-				console.log(item);
-				localStorage.setItem(item.name, JSON.stringify(item))
-
+				
+				let items = [];
+				items.push(item);
+				localStorage.setItem("items",JSON.stringify(items));
 				/* Create item element in the cart */
 
 				const cartItem = document.createElement("div");
