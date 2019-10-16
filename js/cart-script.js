@@ -22,7 +22,7 @@
 				let finalPrice = price.slice(1).trim();
 				item.price = finalPrice;
 				console.log(item);
-
+				localStorage.setItem(item.name, JSON.stringify(item))
 
 				/* Create item element in the cart */
 
